@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Notification"
+        />
+
+    <Button
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Browser"
+        android:layout_below="@id/notify"
+
+        />
+
+    <Button
+        android:id="@+id/sms_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Short Message"
+        android:layout_below="@id/web"
+
+        />
+
+    <Button
+        android:id="@+id/details_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Device Details"
+        android:layout_below="@id/sms_btn"
+
+        />
+    <Button
+        android:id="@+id/audio_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Device Details"
+        android:layout_below="@id/details_btn"
+
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/audio_btn"
+        android:layout_centerHorizontal="true">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

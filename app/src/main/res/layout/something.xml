@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/icon_warning"
+        android:id="@+id/img_dialog" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:id="@+id/text_"
+        android:layout_below="@id/img_dialog"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="Unable To Connect Internet"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn"
+            android:text="Cancel"
+            android:layout_below="@+id/text_"
+            />
+
+        <Button
+            android:layout_marginLeft="285dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_reload"
+            android:layout_below="@+id/text_"
+            android:text="Reload"
+            android:background="#00ffffff"
+            android:textColor="#FFF"
+            />
+
+</RelativeLayout>

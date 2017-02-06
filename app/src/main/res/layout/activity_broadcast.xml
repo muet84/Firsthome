@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BroadCast_Activity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silent"
+        android:id="@+id/btn_silent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General"
+        android:id="@+id/btn_general"
+        android:layout_below="@+id/btn_silent"
+        android:layout_alignLeft="@+id/btn_silent"
+        android:layout_alignStart="@+id/btn_silent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vibration"
+        android:id="@+id/btn_vibration"
+        android:layout_below="@+id/btn_general"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Current Profile Mode"
+        android:id="@+id/btn_current_profile"
+        android:layout_below="@+id/btn_vibration"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set BroadCast"
+        android:id="@+id/btn_set_broadcast"
+        android:layout_below="@+id/btn_current_profile"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
